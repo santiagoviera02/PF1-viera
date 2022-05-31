@@ -18,7 +18,7 @@
                 <mat-grid-tile [colspan]="1" [rowspan]="1">
                     <mat-form-field class="ancho">
                         <mat-label>Materia</mat-label>
-                        <input matInput autocomplete="off" formControlName="materi">
+                        <input matInput autocomplete="off" formControlName="materia">
                     </mat-form-field>
                 </mat-grid-tile>
                 <mat-grid-tile [colspan]="1" [rowspan]="1">
@@ -35,6 +35,7 @@
                 </mat-grid-tile>
                 <mat-grid-tile [colspan]="1" [rowspan]="1">
                     <button mat-raised-button style="margin-right: 20px;">Volver</button>
+
                     <button type="submit" [disabled]="form.invalid" mat-raised-button color="primary">Hecho</button>
                 </mat-grid-tile>
             </mat-grid-list>
