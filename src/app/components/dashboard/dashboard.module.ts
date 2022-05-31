@@ -8,6 +8,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { AlumnosComponent } from './alumnos/alumnos.component';
 import { ReportesComponent } from './reportes/reportes.component';
+import { CrearAlumnosComponent } from './alumnos/crear-alumnos/crear-alumnos.component';
 
 
 
@@ -17,7 +18,8 @@ import { ReportesComponent } from './reportes/reportes.component';
     InicioComponent,
     NavbarComponent,
     AlumnosComponent,
-    ReportesComponent
+    ReportesComponent,
+    CrearAlumnosComponent
   ],
   imports: [
     CommonModule,

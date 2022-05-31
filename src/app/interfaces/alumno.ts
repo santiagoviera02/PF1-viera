@@ -3,5 +3,4 @@ export interface Alumno {
     materia: string;
     calificacion: string;
     profesor: string;
-
 }

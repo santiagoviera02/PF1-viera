@@ -28,7 +28,7 @@ export class LoginComponent implements OnInit {
     const usuario = this.form.value.usuario;
     const password = this.form.value.password;
 
-    if (usuario == 'sviera' && password == 'admin123') {
+    if (usuario == 'admin' && password == 'admin') {
       this.fakeLoading();
     } else {
       this.error();

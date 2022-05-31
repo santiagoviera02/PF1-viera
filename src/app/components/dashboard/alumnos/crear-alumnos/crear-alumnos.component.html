@@ -1,0 +1,40 @@
+<div class="container">
+    <mat-toolbar>
+        <span>Crear Alumno</span>
+    </mat-toolbar>
+
+    <mat-card style="margin-top: 15px ;">
+        <form [formGroup]="form" (ngSubmit)="agregarAlumno">
+            <mat-grid-list cols="4" rowHeight="70px">
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    <mat-form-field class="ancho">
+                        <mat-label>Nombre y Apeliido</mat-label>
+                        <input matInput autocomplete="off" formControlName="nombreyapellido">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="3" [rowspan]="5">
+                    <img src="./assets/img/usuario.png.png" width="250" height="250">
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    <mat-form-field class="ancho">
+                        <mat-label>Materia</mat-label>
+                        <input matInput autocomplete="off" formControlName="materi">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    <mat-form-field class="ancho">
+                        <mat-label>Calificacion</mat-label>
+                        <input matInput autocomplete="off" formControlName="calificacion">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    <mat-form-field class="ancho">
+                        <mat-label>Profesor</mat-label>
+                        <input matInput autocomplete="off" formControlName="profesor">
+                    </mat-form-field>
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="1" [rowspan]="1">
+                    <button mat-raised-button style="margin-right: 20px;">Volver</button>
+                    <button type="submit" [disabled]="form.invalid" mat-raised-button color="primary">Hecho</button>
+                </mat-grid-tile>
+            </mat-grid-list>
