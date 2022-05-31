@@ -53,7 +53,7 @@ export class AlumnosComponent implements OnInit {
     this._snackBar.open('Se elimino un alumno', '', {
       duration: 1200,
       horizontalPosition: 'center',
-      verticalPosition: 'bottom'
+      verticalPosition: 'bottom',
     })
   }
 }
