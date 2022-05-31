@@ -12,9 +12,8 @@ import { AlumnoService } from '../../../../services/alumno.service';
 export class CrearAlumnosComponent implements OnInit {
   tiles: any[] = [];
   form: FormGroup;
-  private _alumnoService: any;
 
-  constructor(private fb: FormBuilder, private AlumnoService: AlumnoService) {
+  constructor(private fb: FormBuilder, private _alumnoService: AlumnoService) {
     this.form = this.fb.group({
       nombreyapellido: ['', Validators.required],
       materia: ['', Validators.required],
@@ -27,16 +26,15 @@ export class CrearAlumnosComponent implements OnInit {
   }
 
   agregarAlumno() {
-    console.log(this.agregarAlumno)
 
-    const user: Alumno = {
-      nombreyapellido: this.form.value.alumno,
-      materia: this.form.value.alumno,
-      calificacion: this.form.value.alumno,
-      profesor: this.form.value.alumno,
+    const alumn: Alumno = {
+      nombreyapellido: this.form.value.nombreyapellido,
+      materia: this.form.value.materia,
+      calificacion: this.form.value.calificacion,
+      profesor: this.form.value.profesor,
     }
 
 
-    this._alumnoService.agregarAlumno(user);
+    this._alumnoService.agregarAlumno(alumn);
   }
 }

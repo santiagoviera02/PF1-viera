@@ -1,10 +1,10 @@
 <div class="container">
     <mat-toolbar>
-        <span>Crear Alumno</span>
+        <span>Agregar Alumno</span>
     </mat-toolbar>
 
-    <mat-card style="margin-top: 15px ;">
-        <form [formGroup]="form" (ngSubmit)="agregarAlumno">
+    <mat-card style="margin-top: 10px ;">
+        <form [formGroup]="form" (ngSubmit)="agregarAlumno()">
             <mat-grid-list cols="4" rowHeight="70px">
                 <mat-grid-tile [colspan]="1" [rowspan]="1">
                     <mat-form-field class="ancho">
@@ -39,3 +39,6 @@
                     <button type="submit" [disabled]="form.invalid" mat-raised-button color="primary">Hecho</button>
                 </mat-grid-tile>
             </mat-grid-list>
+        </form>
+    </mat-card>
+</div>
