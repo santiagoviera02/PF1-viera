@@ -1,5 +1,5 @@
 <div class="container">
-    <mat-toolbar>
+    <mat-toolbar class="agrAlum">
         <span>Agregar Alumno</span>
     </mat-toolbar>
 
@@ -36,7 +36,8 @@
                 <mat-grid-tile [colspan]="1" [rowspan]="1">
                     <button mat-raised-button style="margin-right: 20px;">Volver</button>
 
-                    <button type="submit" [disabled]="form.invalid" mat-raised-button color="primary">Hecho</button>
+                    <button class="agrAlum" type="submit" [disabled]="form.invalid" mat-raised-button
+                        color="primary">Hecho</button>
                 </mat-grid-tile>
             </mat-grid-list>
         </form>
